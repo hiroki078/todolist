@@ -4,6 +4,10 @@ import './App.css';
 function App() {
   const [inputValue, setInputValue] = useState("")
   const [todos, setTodos] = useState<Todo[]>([]);
+
+  //データ型の宣言
+  //typeを使ってデータ型に対して別名をつけている
+  //データ型の宣言はパスカルケース
   type Todo= {
     inputValue: string;
     id: number;
